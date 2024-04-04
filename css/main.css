@@ -1,0 +1,800 @@
+.background{
+    background-image: url(../assests/images/homePageHeader.png);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+    padding: 1px;
+    margin: 0%;
+}
+
+.flexsearch{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.topNav{
+    overflow: hidden;
+    background-color: #ffffff;
+    opacity: 70%;
+    margin: 30px ;
+    border-radius: 25px;
+}
+
+
+.topNav a {
+    float: left;
+    color: #464343;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.flexs1{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topNav a:hover {
+color: #5f0979;
+font-size: 22px;
+}
+
+.topNav a.active {
+color: #e61729;
+}
+
+
+.bottemleft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+@font-face{
+    font-family: 'porter-sans-block';
+    src: url(../assests/Fonts/porter_sans_block/porter-sans-inline-block-webfont.ttf)
+     format("woff");
+}
+
+h4{
+    color: #e61729;
+    font-family: 'porter-sans-block';
+    font-size: 40px;
+    padding: 10px;
+}
+
+h5{
+    color: #42036e;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+.flexcontainer1{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #45016E;
+    padding: 50px 10px;
+}
+
+.flexitem1{
+    color: #ffffff;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 17px;
+    color: #4791bd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexcontainer1-1{
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #45016E;
+    padding: 50px 10px;
+}
+
+.flexitem1-1{
+    color: #ffffff;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+fieldset{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input, #contact button{
+  font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#contact button{
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    background-color: #e61729;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+#contact button:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.flexcontainer2{
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+.flexitem2{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-size: 25px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex3heading{
+    background-color: #45016E;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   padding: 50px 0;
+}
+
+.flexcontainer3{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #45016E;
+    padding: 10px 10px;
+}
+
+.flexitem3{
+    color: #ffffff;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h6{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.flexitem3-1{
+    color: #ffffff;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #45016E;
+}
+
+.flexcontainerF{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+h7{
+    font-size: 20px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.flexitemF{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footNav{
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+}
+
+
+.footNav a {
+    float: right;
+    color: #464343;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footNavright {
+    padding-right: 28%;
+    align-items: center;
+}
+
+.footNav a:hover {
+color: #5f0979;
+font-size: 22px;
+}
+
+.footNav a.active {
+color: #e61729;
+}
+
+
+h8{
+    font-size: 20px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.flexcontainerF2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 1px;
+}
+
+.flexitemF2{
+    color: #333;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1px;
+}
+
+
+
+
+
+
+
+.backgroundflights{   
+    background-image: url(../assests/images/headerbackBack.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    padding: 1px;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+h9{
+    color: #ffffff;
+    font-family: 'porter-sans-block';
+    font-size: 40px;
+    padding: 10px;
+}
+
+.flexcontainer4{
+    display: flex;
+   flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+.flexitem4{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 70px;
+}
+
+.flexcontainer4-1{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: left;
+    justify-content: left;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+.flexitem4-1{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0 50px;
+}
+
+h10{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+h11{
+    color: #8a8484;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+h12{
+    color: #333;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#contact input, #contact button2{
+    font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+  }
+  
+  #contact button2{
+      cursor: pointer;
+      width: 150px;
+      border: none;
+      background-color: #7a19a0;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      justify-content: center;
+  }
+  
+  
+  #contact button2:hover{
+      background-color: #53176b;
+      color: #ffffff;
+  }
+
+  h13{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h14{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h15{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h16{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.flexcontainer5{
+    display: flex;
+   flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #45016E;
+    padding: 50px 10px;
+}
+
+.flexitem5{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 70px;
+}
+
+.flexcontainer5-1{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: left;
+    justify-content: left;
+    background-color: #45016E;
+    padding: 50px 10px;
+}
+
+.flexitem5-1{
+    color: #ffffff;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0 50px;
+}
+
+#contact input, #contact button{
+    font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+  }
+  
+  #contact button3{
+      cursor: pointer;
+      width: 150px;
+      border: none;
+      background-color: #3fc2d3;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      justify-content: center;
+  }
+  
+  
+  #contact button3:hover{
+      background-color: #379ba8;
+      color: #ffffff;
+  }
+
+h17{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+h18{
+    color: #379ba8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+h19{
+    color: #ffffff;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+h20{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h21{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h22{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h23{
+    color: #8a8484;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.flexcontainer6{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+.flexitem6{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.flexcontainer6-1{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: left;
+    justify-content: left;
+    background-color: #ffffff;
+    padding: 10px 10px;
+}
+
+.flexitem6-1{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0 2em;
+}
+
+
+h24{
+    color: #379ba8;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     padding: 10px;
+}
+
+h25{
+    color: #45016E;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 30px;
+     padding: 10px;
+     font-weight: bold;
+}
+
+.flexcontainer7{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+.flexitem7{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.flexcontainer7-1{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+.flexitem7-1{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.flexcontainer7-2{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 10px;
+}
+
+.flexitem7-2{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h26{
+    color: #379ba8;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     padding: 10px;
+}
+h27{
+    color: #45016E;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 30px;
+     padding: 10px;
+     font-weight: bold;
+}
+
+
+#contact2 input, #contact textarea, #contact button{
+    font-family: 'roboto',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#contact2{
+    background-image: url(../assests/images/formBack.png);
+    background-size: cover;
+    background-position: right;
+    padding: 2em 4em;
+    margin: 50px 50px;
+    border-radius: 25px;
+}
+
+fieldset{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#contact2 input, #contact2 textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #ebebeb;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#contact2 textarea{
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+    border-radius: 15px;
+}
+
+#contact2 button{
+    cursor: pointer;
+    width: 200px;
+    border: none;
+    background-color: #e61729;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#contact2 input:hover, #contact2 textarea:hover{
+    border: 1px solid #242424;
+}
+
+#contact2 input:focus, #contact2 textarea:focus{
+    outline: 0;
+    border: 3px solid #e91212;
+}
+
+#contact2 button:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+.flexcontainerform{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: left;
+    justify-content: left;
+    padding: 50px 10px;
+}
+
+.flexform{
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+h30{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+h31{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     padding: 10px;
+}
+
