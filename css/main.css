@@ -2,10 +2,8 @@
     background-image: url(../assests/images/homePageHeader.png);
     background-size: cover;
     background-position: center;
-    height: 1000px;
-    width: 100%;
-    padding: 1px;
-    margin: 0%;
+    margin: -10px;
+    height: 100vh;
 }
 
 .flexsearch{
@@ -22,7 +20,8 @@
     overflow: hidden;
     background-color: #ffffff;
     opacity: 70%;
-    margin: 30px ;
+    margin-left: 30px;
+    margin-right: 30px;
     border-radius: 25px;
 }
 
@@ -38,10 +37,20 @@
 
 
 .flexs1{
+    float: left;
     color: #333;
     padding: 1px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexs2{
+    float: inline-end;
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 800px;
 }
 
 .topNav a:hover {
@@ -58,6 +67,7 @@ color: #e61729;
     position: absolute;
     bottom: 8px;
     left: 16px;
+    padding: 10px 10px;
 }
 
 @font-face{
@@ -70,13 +80,13 @@ h4{
     color: #e61729;
     font-family: 'porter-sans-block';
     font-size: 40px;
-    padding: 10px;
+    padding: 17px 17px;
 }
 
 h5{
     color: #42036e;
     font-size: 25px;
-    padding: 10px;
+    padding: 17px 17px;
 
 }
 
@@ -89,11 +99,12 @@ h5{
     align-items: center;
     background-color: #45016E;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 .flexitem1{
     color: #ffffff;
-    padding: 1px;
+    padding: 10px 10px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -123,7 +134,7 @@ h2{
 
 .flexitem1-1{
     color: #ffffff;
-    padding: 1px;
+    padding: 10px 10px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -169,11 +180,12 @@ fieldset{
     align-items: center;
     background-color: #ffffff;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 .flexitem2{
     color: #333;
-    padding: 1px;
+    padding: 10px 10px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -191,6 +203,7 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
    text-align: center;
    padding: 50px 0;
+   margin: -10px;
 }
 
 .flexcontainer3{
@@ -202,14 +215,17 @@ h3{
     align-items: center;
     background-color: #45016E;
     padding: 10px 10px;
+    
 }
 
 .flexitem3{
     color: #ffffff;
-    padding: 1px;
+    padding: 10px 10px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    
+
 }
 
 h6{
@@ -222,11 +238,12 @@ h6{
 
 .flexitem3-1{
     color: #ffffff;
-    padding: 1px;
+    padding: 10px 10px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #45016E;
+    margin: -10px;
 }
 
 .flexcontainerF{
@@ -238,6 +255,7 @@ h6{
     align-items: center;
     background-color: #ffffff;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 h7{
@@ -249,7 +267,7 @@ h7{
 
 .flexitemF{
     color: #333;
-    padding: 1px;
+    padding: 10px 10px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -300,7 +318,7 @@ h8{
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    margin: 1px;
+    padding: 10px 10px;
 }
 
 .flexitemF2{
@@ -323,7 +341,7 @@ h8{
     background-position: center;
     height: 600px;
     width: 100%;
-    padding: 1px;
+   margin: -10px;
 }
 
 .center{
@@ -350,6 +368,7 @@ h9{
     align-items: center;
     background-color: #ffffff;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 .flexitem4{
@@ -369,6 +388,7 @@ h9{
     justify-content: left;
     background-color: #ffffff;
     padding: 50px 10px;
+
 }
 
 .flexitem4-1{
@@ -463,6 +483,7 @@ h16{
     align-items: center;
     background-color: #45016E;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 .flexitem5{
@@ -586,6 +607,7 @@ h23{
     align-items: center;
     background-color: #ffffff;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 .flexitem6{
@@ -640,6 +662,7 @@ h25{
     align-items: center;
     background-color: #ffffff;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 .flexitem7{
