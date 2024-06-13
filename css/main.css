@@ -6,15 +6,6 @@
     height: 100vh;
 }
 
-.flexsearch{
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-}
 
 .topNav{
     overflow: hidden;
@@ -23,6 +14,7 @@
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 25px;
+    
 }
 
 
@@ -50,8 +42,21 @@
     padding: 1px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 800px;
+    margin-right: 790px;
+    text-align: center;
 }
+
+.flexs3{
+    float: right;
+    color: #333;
+    padding: 1px;
+    flex: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: -700px;
+    margin-top: -70px;
+
+}
+
 
 .topNav a:hover {
 color: #5f0979;
@@ -61,6 +66,30 @@ font-size: 22px;
 .topNav a.active {
 color: #e61729;
 }
+
+
+.search-bar {
+    margin-bottom: 20px;
+    margin-right: -1000px;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    
+}
+.item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.item h3 {
+    margin: 0 0 10px 0;
+}
+
 
 
 .bottemleft{
@@ -168,7 +197,8 @@ fieldset{
 
 #contact button:hover{
     background-color: #ff0000;
-    color: #ffffff;
+    color: #333;
+    width: 155px;
 }
 
 .flexcontainer2{
@@ -259,7 +289,7 @@ h6{
 }
 
 h7{
-    font-size: 20px;
+    font-size: 15px;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -270,6 +300,7 @@ h7{
     padding: 10px 10px;
     flex: 50%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
 
 }
 
@@ -284,19 +315,22 @@ h7{
     float: right;
     color: #464343;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 
-.footNavright {
-    padding-right: 28%;
+.footNavright { 
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ;
     align-items: center;
 }
 
 .footNav a:hover {
 color: #5f0979;
-font-size: 22px;
+font-size: 20px;
 }
 
 .footNav a.active {
@@ -821,3 +855,60 @@ h31{
      padding: 10px;
 }
 
+
+
+.contact-form {
+    background-image: url(../assests/images/formBack.png);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-form h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+.btn-submit {
+    background-color: #FF0000;
+    border: none;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 20px; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

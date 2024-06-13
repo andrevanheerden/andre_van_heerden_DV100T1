@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta name="keywords" content="HTML,CSS, Template, Bootstrap">
+        <meta name="author" content="Andre van Heerden 241155">
+
+        <title>Red Planet Ventures</title>
+
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../pages/cart.html">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: white; /* Dark purple background */
+                color: white;
+            }
+            .product-image {
+                max-width: 100%;
+                height: auto;
+            }
+            .price, .discount-price {
+                color: #000000; 
+                font-size: 24px;
+            }
+            .star-rating {
+                color: gold;
+            }
+            .btn-danger, .btn-primary {
+                border: none;
+            }
+            .btn-danger:hover, .btn-primary:hover {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="backgroundflights" >
+
+                <div class="topNav">
+                    <div class="flexsearch">
+                        <div class="flexs1">
+                    <a href="../index.html"><img src="../assests/images/logo.png" width="200px"></a>
+                </div>
+                    <div class="flexs2">
+                        <a  href="../index.html">Home</a>
+                        <a href="../pages/aboutus2.html">about us</a>
+                        <a href="../pages/aboutus.html">flights</a>
+                        <a href="../pages/contact.html">contact us</a>
+                        
+                        <div class="search-bar">
+                            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for names..">
+                        </div>
+
+                            <div class="flexs3">
+                                <a href="../pages/cart.html"><button style="font-size:24px"> <i class="fa fa-shopping-cart"></i></button></a>
+                            </div>
+
+                
+                </div>
+
+            </div>
+                </div>
+            <div class="center">
+                <h9>Cart</h9>
+            </div>
+            </div>
+            </div>
+
+        </nav>
+        <header>
+
+        </header>
+
+        <section>  
+            
+            <div class="container mt-5">
+            <h1 class="text-center mb-4">Your Cart</h1>
+
+            <div id="itemsContainer">            <div class="row mb-3">
+                <div class="col-md-4">
+                    <img src="../assests/images/flighhtMars.png" width="200px" alt="Mars" class="product-image">
+                </div>
+                <div class="col-md-8">
+                    <h10>The Classic Mars Experience</h10>
+                    <div class="discount-price">R 25,000.00</div>
+                    <div class="star-rating">
+                        &#9733; &#9733; &#9733; &#9733; &#9734; (36 Customer Reviews)
+                    </div>
+                    <p><h12>Embark on a thrilling Mars vacation filled with red deserts, ancient relics, and towering canyons. Enjoy low-gravity hikes, rover trips to Olympus Mons,
+                        and mesmerizing stargazing under the Martian moons. Experience unforgettable adventures on the rust-colored landscapes, blending space exploration with
+                         the beauty of an alien world.</h12></p>
+                    <div class="flexItem">
+                        <table class="ticketSection">
+                          <tr>
+                            <td colspan="2">  <div class="stepper-input">
+                              <button class="btn btn-left" onclick="decreaseMars(); total()" >-</button>
+                              <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+                              <button class="btn btn-right" onclick="increaseMars(); total()" >+</button>
+                           </div></td>
+                          </tr>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <img src="../assests/images/flightNeptune.png" width="200px" alt="Neptune" class="product-image">
+                </div>
+                <div class="col-md-8">
+                    <h10>Neptune's Cosmic Dive</h10>
+                    <div class="discount-price">R 45,000.00</div>
+                    <div class="star-rating">
+                        &#9733; &#9733; &#9733; &#9733; &#9733; (24 Customer Reviews)
+                    </div>
+                    <p><h12>Embark on a once-in-a-lifetime voyage to Neptune aboard the luxurious "Neptune Voyager." Experience surreal vistas, weightlessness in its frigid oceans,
+                        thrilling spacewalks, and gourmet space cuisine. This unforgettable adventure blends luxury with cosmic exploration, promising memories to last a lifetime.</h12></p>
+                    <div class="flexItem">
+                        <table class="ticketSection">
+                          <tr>
+                            <td colspan="2">  <div class="stepper-input">
+                              <button class="btn btn-left" onclick="decreaseNeptune(); total()" >-</button>
+                              <input type="text" value="0" class="input-box" id="ticketsNeptune" onchange="total()">
+                              <button class="btn btn-right" onclick="increaseNeptune(); total()" >+</button>
+                           </div></td>
+                          </tr>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <img src="../assests/images/flightJupiter.png" width="200px" alt="Jupiter" class="product-image">
+                </div>
+                <div class="col-md-8">
+                    <h10>The Giant's Journey</h10>
+                    <div class="discount-price">R 65,000.00</div>
+                    <div class="star-rating">
+                        &#9733; &#9733; &#9733; &#9733; &#9733; (28 Customer Reviews)
+                    </div>
+                    <p><h12>Embark on an extraordinary voyage to Jupiter aboard the luxurious "Jupiter Odyssey." Prepare for awe-inspiring storms, delve into metallic hydrogen oceans,
+                        and explore fascinating moons like Europa and Io. Engage in thrilling activities such as gravity surfing and comet chasing while enjoying luxury
+                         accommodations. This adventure combines cosmic exploration with comfort, promising an unforgettable experience.</h12></p>
+                    <div class="flexItem">
+                        <table class="ticketSection">
+                          <tr>
+                            <td colspan="2">  <div class="stepper-input">
+                              <button class="btn btn-left" onclick="decreaseJupiter(); total()" >-</button>
+                              <input type="text" value="0" class="input-box" id="ticketsJupiter" onchange="total()">
+                              <button class="btn btn-right" onclick="increaseJupiter(); total()" >+</button>
+                           </div></td>
+                          </tr>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <img src="../assests/images/flightSaturn.png" width="200px" alt="Saturn" class="product-image">
+                </div>
+                <div class="col-md-8">
+                    <h10>Ring Around a Saturn</h10>
+                    <div class="discount-price">R 40,000.00</div>
+                    <div class="star-rating">
+                        &#9733; &#9733; &#9733; &#9733; &#9734; (32 Customer Reviews)
+                    </div>
+                    <p><h12>Embark on an exhilarating journey to Saturn with the "Saturn Explorer." Marvel at its iconic rings, turbulent storms, and diverse moons like Enceladus and
+                        Titan. Enjoy activities such as rover expeditions and cave explorations, all while indulging in luxurious accommodations. This adventure promises a seamless
+                         blend of discovery and excitement, offering an unforgettable experience filled with wonder and possibility.</h12></p>
+                    <div class="flexItem">
+                        <table class="ticketSection">
+                          <tr>
+                            <td colspan="2">  <div class="stepper-input">
+                              <button class="btn btn-left" onclick="decreaseSaturn(); total()" >-</button>
+                              <input type="text" value="0" class="input-box" id="ticketsSaturn" onchange="total()">
+                              <button class="btn btn-right" onclick="increaseSaturn(); total()" >+</button>
+                           </div></td>
+                          </tr>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <img src="../assests/images/flightUranus.png" width="200px" alt="Uranus" class="product-image">
+                </div>
+                <div class="col-md-8">
+                    <h10>Uranus Uncharted</h10>
+                    <div class="discount-price">R 50,000.00</div>
+                    <div class="star-rating">
+                        &#9733; &#9733; &#9733; &#9733; &#9734; (20 Customer Reviews)
+                    </div>
+                    <p><h12>Join the "Uranus Unveiled" tour for an extraordinary cosmic adventure. Explore the mysteries of Uranus, its ethereal atmosphere, and captivating moons.
+                        Experience zero-gravity excursions, witness auroras, and capture their beauty in photography workshops. Enjoy luxurious accommodations, ensuring comfort
+                         and awe throughout the journey. Discover the hidden secrets and unparalleled beauty of Uranus on this unforgettable odyssey.</h12></p>
+                    <div class="flexItem">
+                        <table class="ticketSection">
+                          <tr>
+                            <td colspan="2">  <div class="stepper-input">
+                              <button class="btn btn-left" onclick="decreaseUranus(); total()" >-</button>
+                              <input type="text" value="0" class="input-box" id="ticketsUranus" onchange="total()">
+                              <button class="btn btn-right" onclick="increaseUranus(); total()" >+</button>
+                           </div></td>
+                          </tr>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <img src="../assests/images/flightMoon.png" width="200px" alt="Venus" class="product-image">
+                </div>
+                <div class="col-md-8">
+                    <h10>Moonlight Meander</h10>
+                    <div class="discount-price">R 15,000.00</div>
+                    <div class="star-rating">
+                        &#9733; &#9733; &#9733; &#9733; &#9734; (18 Customer Reviews)
+                    </div>
+                    <p><h12>Join the "Moonlight Meander™" for the ultimate lunar getaway. Travel aboard the "Celestial Cruiser" to the Moon for an unforgettable adventure.
+                        Enjoy leisurely lunar walks, stunning Earthrise views, and stargazing sessions under the moonlight. Retreat to luxurious accommodations, ensuring a
+                         comfortable and extraordinary experience. Create lifelong memories on this magical lunar escapade.</h12></p>
+                    <div class="flexItem">
+                        <table class="ticketSection">
+                          <tr>
+                            <td colspan="2">  <div class="stepper-input">
+                              <button class="btn btn-left" onclick="decreaseMoon(); total()" >-</button>
+                              <input type="text" value="0" class="input-box" id="ticketsMoon" onchange="total()">
+                              <button class="btn btn-right" onclick="increaseMoon(); total()" >+</button>
+                           </div></td>
+                          </tr>
+                        </table>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div></div>
+</section>
+
+    
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h1>check out</h1>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <label for="subject" class="form-label">pay options</label>
+                            <div class="mb-7 input-group">
+                                <span class="input-group-text">
+                                  <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                                </span>
+                                <select class="form-select" id="subject">
+                                  <option value="pricing" selected>VISA</option>
+                                  <option value="content">pay pal</option>
+                                  <option value="other">eft</option>
+                                </select>
+                              </div>
+                            <div class="form-group">
+                                <label for="email">card number</label>
+                                <input type="number" class="form-control" id="number" placeholder="**** **** **** ****">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">card expiry date</label>
+                                <input type="date" class="form-control" id="date" placeholder="mm/yy">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">security code</label>
+                                <input type="number" class="form-control" id="number" placeholder="***">
+                            </div>
+                            <div class="form-group">
+                                <table>
+                                    <tr>
+                                        <td colspan="4"> <p>Total: <span id="total"></span></p></td>
+                                      </tr>
+                                    </table>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit btn-block">check out</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="thankYouModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p><h12>Thank you for your purchase</h12></p>
+            </div>
+    </section>
+
+
+
+
+ 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="../js/main.js"></script>
+
+        <footer>
+            <div class="flexcontainerF">
+                <div class="flexitemF"> <img src="../assests/images/logo.png" width="400px">
+                    <p>  Offering unforgettable trips to explore plants in our solar system</p>
+                </div>
+    
+    
+                <div class="flexitemF">
+                    <p>
+                        <h7>Company</h7>
+                        <div class="footNav">
+                     <div class="footNavright">
+                        <a  href="../index.html">Home</a>
+                        <a href="../pages/aboutus2.html">about us</a>
+                        <a href="../pages/aboutus.html">flights</a>
+                        <a href="../pages/contact.html">contact us</a>
+                        
+                            </div>
+                        </div>
+                    </p>
+                </div>
+    
+    
+                <div class="flexitemF">
+                    <p>
+                        <h8>social media links</h8>
+                    </p>
+                    <div class="flexcontainerF2">
+                            <div class="flexitemF2"> <img src="../assests/images/smInstagram.png" width="100px"> </div>
+                            <div class="flexitemF2"> <img src="../assests/images/smX.png" width="100px"> </div>
+                            <div class="flexitemF2"> <img src="../assests/images/smTicktock.png" width="100px"> </div>
+                            <div class="flexitemF2"> <img src="../assests/images/smFacebook.png" width="100px"> </div>
+                        
+                        </div>
+                </div>
+    
+        </footer>
+
+    </body>
+
+</html>
